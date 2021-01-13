@@ -1,0 +1,40 @@
+{
+  "name": "fuhsi",
+  "version": "0.0.1",
+  "description": "incarnate function.",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "test": "jest",
+    "build:es": "tsc --outDir es",
+    "build:cjs": "babel src/**/*.ts -d cjs -x '.ts' --ignore '**/*.test.*','**/__tests__/*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhihuahuang/fuhsi.git"
+  },
+  "keywords": [
+    "function",
+    "utils",
+    "kit",
+    "util",
+    "tools",
+    "common"
+  ],
+  "author": "zhihuahuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhihuahuang/incarnation-js/issues"
+  },
+  "homepage": "https://github.com/zhihuahuang/incarnation-js#readme",
+  "devDependencies": {
+    "@babel/cli": "7.12.8",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/jest": "^25.2.3",
+    "jest": "^25.5.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
