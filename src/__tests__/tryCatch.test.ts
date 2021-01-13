@@ -8,11 +8,9 @@ test('tryCatch',() => {
     throw new Error('test');
   }
 
-  const iThrowError = tryCatch(throwError, {
-    handler(err: Error) {
-      error = err;
-      return true;
-    }
+  const iThrowError = tryCatch(throwError, function(err: Error) {
+    error = err;
+    return true;
   });
 
   const value = iThrowError();
@@ -28,11 +26,9 @@ test('tryCatch Async',async () => {
     throw new Error('test');
   }
 
-  const iThrowError = tryCatch(throwErrorAsync, {
-    handler(err: Error) {
-      error = err;
-      return true;
-    }
+  const iThrowError = tryCatch(throwErrorAsync, function(err: Error) {
+    error = err;
+    return true;
   });
 
   const value = iThrowError();

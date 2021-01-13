@@ -3,10 +3,8 @@ import { count } from '../count';
 
 test('incarnate',() => {
   const counts = [];
-  const iAdd = count(add, {
-    handler(i: number) {
-      counts.push(i);
-    }
+  const iAdd = count(add, function(i: number) {
+    counts.push(i);
   });
 
   const value = iAdd(1);

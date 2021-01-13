@@ -1,13 +1,14 @@
 {
   "name": "fuhsi",
   "version": "0.0.1",
-  "description": "incarnate function.",
+  "description": "伏羲 FuHsi，JS 函数增强库",
   "main": "cjs/index.js",
   "module": "es/index.js",
   "scripts": {
     "test": "jest",
     "build:es": "tsc --outDir es",
-    "build:cjs": "babel src/**/*.ts -d cjs -x '.ts' --ignore '**/*.test.*','**/__tests__/*'"
+    "build:cjs": "babel src/**/*.ts -d cjs -x '.ts' --ignore '**/*.test.*','**/__tests__/*'",
+    "build": "npm run build:es & npm run build:cjs"
   },
   "repository": {
     "type": "git",
