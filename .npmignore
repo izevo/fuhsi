@@ -1,1 +1,8 @@
-src
+src/
+test/
+.github
+package-lock.json
+tsconfig.json
+.babelrc.js
+.gitignore
+jest.config.js

@@ -36,6 +36,33 @@ console.log(val); // 0.512
 
 ## once
 
-## retry
+```javascript
+const now = once(Date.now);
+console.log(now() == now()); // true
+```
 
-## tryCatch
+## retry
+```javascript
+let i = 1;
+async function foo() {
+  if (i == 3) {
+    return 'done';
+  }
+  i++;
+  throw new Error('test');
+  
+}
+
+const fn = tryCatch(foo, 3);
+fn(); // 'done'
+```
+
+## catch
+```javascript
+async function foo() {
+  throw new Error('test');
+}
+
+const fn = tryCatch(foo, e => 'error');
+fn(); // error
+```
