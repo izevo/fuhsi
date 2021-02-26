@@ -25,9 +25,9 @@
   "author": "zhihuahuang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zhihuahuang/incarnation-js/issues"
+    "url": "https://github.com/zhihuahuang/fuhsi/issues"
   },
-  "homepage": "https://github.com/zhihuahuang/incarnation-js#readme",
+  "homepage": "https://github.com/zhihuahuang/fuhsi#readme",
   "devDependencies": {
     "@babel/cli": "7.12.8",
     "@babel/core": "^7.12.10",
