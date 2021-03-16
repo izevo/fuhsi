@@ -1,6 +1,6 @@
 {
   "name": "fuhsi",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "伏羲 FuHsi，JS 函数增强库",
   "main": "cjs/index.js",
   "module": "es/index.js",
