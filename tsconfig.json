@@ -4,6 +4,7 @@
       "node_modules/@types"
     ],
     "module": "esnext",
+    "target": "esnext",
     "moduleResolution": "node",
   },
   "baseUrl": ".",
